@@ -84,7 +84,7 @@ def test_basic_chat():
     just_grok_it.unpatch_all()
     just_grok_it.all()
 
-    from mistralai import Mistral
+    from mistralai.client import Mistral
 
     result = {
         "test_name": "Basic Chat",
@@ -126,7 +126,7 @@ def test_with_system():
     just_grok_it.unpatch_all()
     just_grok_it.all()
 
-    from mistralai import Mistral
+    from mistralai.client import Mistral
 
     result = {
         "test_name": "With System Message",
@@ -166,7 +166,7 @@ def test_with_temperature():
     just_grok_it.unpatch_all()
     just_grok_it.all()
 
-    from mistralai import Mistral
+    from mistralai.client import Mistral
 
     result = {
         "test_name": "With Temperature",
