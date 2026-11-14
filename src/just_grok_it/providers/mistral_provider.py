@@ -89,7 +89,7 @@ class MistralProvider(BaseProvider):
         self._default_model = default_model or DEFAULT_XAI_MODEL
 
         try:
-            from mistralai.chat import Chat
+            from mistralai.client.chat import Chat
 
             self._chat_class = Chat
 
@@ -122,7 +122,7 @@ class MistralProvider(BaseProvider):
             return
 
         try:
-            from mistralai.chat import Chat
+            from mistralai.client.chat import Chat
 
             if self._original_chat_complete is not None:
                 Chat.complete = self._original_chat_complete
